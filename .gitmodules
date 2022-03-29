@@ -1,0 +1,3 @@
+[submodule "PyTorch-Encoding"]
+	path = PyTorch-Encoding
+	url = git@github.com:zhanghang1989/PyTorch-Encoding.git
