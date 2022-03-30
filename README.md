@@ -2,11 +2,14 @@
 
 1. Install [nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
-2. Build docker image
+2. Cloen this repo including submodules
+`git clone git@github.com:ggand0/segmentation-api-gpu.git --recursive`
+
+3. Build docker image
 `docker build -t ss-gpu:1.0 .`
 
-3. Run docker image
+4. Run docker image
 `docker run --rm -it --ulimit memlock=-1 --ulimit stack=67108864 --gpus=all ss-gpu:1.0`
 
-4. Run inference example
+5. Run inference example
 `python main.py`
